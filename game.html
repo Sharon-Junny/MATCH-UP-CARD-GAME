@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="features.css" rel="stylesheet">
+  <script src="script.js" async></script>
+  <title>CARDS</title>
+
+  <style>
+   .h1 {
+  font-size: 3.5em;
+  font-style:Papyrus;
+  font-weight: bold
+}
+.h2 {
+  color: yellow;
+  font-size: 2.5em;
+  
+}
+body {
+  background-image: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/680310/d654715ddcda3dd556258967de0644f5425dee5a.jpg');
+} 
+
+</style>
+</head>
+<body>
+  <div class=h1><center>MATCH THEM UP!!</center></div>
+  <div class="overlay-text visible">
+    START
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    
+  </div>
+  <div id="victory-text" class="overlay-text">
+    WINNER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class=h2>
+        Time <span id="time-remaining">50</span>
+      </div>
+      <div class=h2>
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qgRZg6UOvnU_NxTy9CrLGP1oNFo8C41RgUq7waUJEmi_ceDFSRWAdQzZJTNXlcDf_n0&usqp=CAU">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qgRZg6UOvnU_NxTy9CrLGP1oNFo8C41RgUq7waUJEmi_ceDFSRWAdQzZJTNXlcDf_n0&usqp=CAU">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTADKso9A9KslQ-yzDIZ9D_RMcyD0iu69TUFV0YKfdgE0cWLCHs9nlhc0Q8rou-aG3OZnc&usqp=CAU">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://images-na.ssl-images-amazon.com/images/I/51ca-OUSBML._SY879_.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTADKso9A9KslQ-yzDIZ9D_RMcyD0iu69TUFV0YKfdgE0cWLCHs9nlhc0Q8rou-aG3OZnc&usqp=CAU">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://images-na.ssl-images-amazon.com/images/I/51ca-OUSBML._SY879_.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRyLHlQBrgqPbC_mvQX3IooYnO6If1xBYgenDbbmZpopR9vLoxWB5HIQahc_23bjEHn8&usqp=CAU">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRyLHlQBrgqPbC_mvQX3IooYnO6If1xBYgenDbbmZpopR9vLoxWB5HIQahc_23bjEHn8&usqp=CAU">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXtQAFhyepfIz3Vrl5B0ZIvMhI3eZr5wK2SJYZiSDXlJ163o-AaWe4cG4wiJarZC4uCko&usqp=CAU">
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+       <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06NVpRuEM6CdvsIlLEEhjdjBd2RUNhlqRZqzFdZF1lsEJvwdbc4vhQjesO5_SkU9R0R0&usqp=CAU">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06NVpRuEM6CdvsIlLEEhjdjBd2RUNhlqRZqzFdZF1lsEJvwdbc4vhQjesO5_SkU9R0R0&usqp=CAU">
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="move" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEWhcCGmX-43uQFzmGfRGLcjA0_Yx-3M08gzs8tD-gNv0f_19PwFKrsBMNIPRVC0IBeY&usqp=CAU">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXtQAFhyepfIz3Vrl5B0ZIvMhI3eZr5wK2SJYZiSDXlJ163o-AaWe4cG4wiJarZC4uCko&usqp=CAU">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
